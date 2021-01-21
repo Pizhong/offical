@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-21 15:19:33
+ * @LastEditTime: 2021-01-21 16:55:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -31,7 +31,34 @@
         </ul>
       </div>
     </div>
-    <div></div>
+    <div class="product-center">
+      <div class="center-title">
+        <img src="../assets/image/centerTextCN.png" class="img-CN">
+        <img src="../assets/image/centerTextEN.png" class="img-EN">
+      </div>
+      <div class="center-item">
+        <ul>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -80,5 +107,19 @@ export default {
   height: 2px;
   background-color: #fff;
 }
+.product-center{
+  width: 100%;
+  height: 109px;
+  background: url('../assets/image/centerBG.png') no-repeat;
+  padding-top: 25px;
+}
+.product-center img{
+  display: block;
+  margin: auto;
+}
+.img-CN{
+  margin-bottom: 10px!important;
+}
+
 
 </style>
