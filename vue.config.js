@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:56:13
- * @LastEditTime: 2021-01-21 17:05:33
+ * @LastEditTime: 2021-01-21 17:09:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\vue.config.js
@@ -55,7 +55,7 @@ module.exports = {
       .use('px2rem-loader')
       .loader('px2rem-loader')
       .options({
-        remUnit: 16,
+        remUnit: 192,
         remPrecision: 8
       })
       .end()
