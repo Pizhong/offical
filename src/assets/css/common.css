@@ -9,8 +9,9 @@ ul, ol, li { list-style: none; font-family:'Microsoft YaHei'; }
 
 .container{
   width: 1920px;
+  height: 4311px;
   margin: auto;
-  
+  background-color: #f6f7fb;
 }
 
 .flex{
@@ -33,3 +34,7 @@ ul, ol, li { list-style: none; font-family:'Microsoft YaHei'; }
   zoom: 1;
   
   }
+
+.mgr0{
+  margin-right: 0!important;
+}
