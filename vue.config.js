@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:56:13
- * @LastEditTime: 2021-01-21 15:32:10
+ * @LastEditTime: 2021-01-21 17:05:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\vue.config.js
@@ -10,11 +10,7 @@
 // 引入等比适配插件
 const px2rem = require('postcss-px2rem')
 
-// 配置基本大小
-const postcss = px2rem({
-  // 基准大小 baseSize，需要和rem.js中相同
-  remUnit: 16
-})
+
 const Timestamp = new Date().getTime();
 
 module.exports = {
@@ -59,7 +55,7 @@ module.exports = {
       .use('px2rem-loader')
       .loader('px2rem-loader')
       .options({
-        remUnit: 192,
+        remUnit: 16,
         remPrecision: 8
       })
       .end()
