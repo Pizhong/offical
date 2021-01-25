@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-21 18:50:57
+ * @LastEditTime: 2021-01-25 10:08:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -119,7 +119,7 @@
         </ul>
       </div>
       <div class="page flex">
-        <div class="page-left">
+        <div class="page-left flex">
           &lt;　
         </div>
         <ul>
@@ -128,6 +128,89 @@
         </ul>
         <div class="page-right flex">&gt;</div>
       </div>
+    </div>
+    <div class="about-us flex">
+      <div class="center-title mgt82 mgb60">
+        <img src="../assets/image/aboutusCN.png" class="img-CN">
+        <img src="../assets/image/aboutusEN.png" class="img-EN">
+      </div>
+      <div class="show-img flex">
+        <ul>
+          <li><img src="../assets/image/us-img1.png" alt=""></li>
+          <li><img src="../assets/image/us-img2.png" alt=""></li>
+          <li><img src="../assets/image/us-img3.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="about-content">
+        <div class="about-content-title flex">
+          <ul>
+            <li>公司概况</li>
+            <li>投资管理</li>
+            <li>公司文化</li>
+            <li>成长历程</li>
+            <li>获奖情况</li>
+          </ul>
+        </div>
+        <div class="about-content-main flex">
+          <ul>
+            <li>
+              <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
+                润过亿，组织结构完善，是国内知名的网络游戏高新企业。2017年，公司收购XXXX，进一步拓展了新的游戏业务，并在网页游戏和H5游戏的细分市场进行了布局。</p>
+            </li>
+            <li>
+              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
+                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
+                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+            </li>
+            <li>
+              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
+                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us flex">
+      <div class="center-title mgt175 mgb60">
+        <img src="../assets/image/contactusCN.png" class="img-CN">
+        <img src="../assets/image/contactusEN.png" class="img-EN">
+      </div>
+      <div class="contact-us-controduce flex">
+        <ul>
+          <li><img src="../assets/image/logo2.png" ></li>
+          <li><div></div></li>
+          <li><p>网络网络成立至今，已经成为中国坚持自主研发民族原创网游的新兴品牌。并且成为华南地区少数拥有，研发、运营、发行一体化能力以及拥有端游、页游、手游多平台多维度多产品的研发型
+            网络游戏公司。淘乐网络与国内数百家媒体保持长期合作关系，产品出口东南亚、南亚数十个国家和地区，未来将在全领域与世界一流游戏公司合作，立志成为国内线游戏厂商。＂真诚互信，包容开放”x欢迎与您合作。</p></li>
+        </ul>
+      </div>
+      <div class="contact-content">
+        <div class="contact-content-title flex mgb60">
+          <ul>
+            <li>海外合作</li>
+            <li>市场合作</li>
+            <li>商务合作</li>
+            <li>应聘咨询</li>
+            <li>客服专线</li>
+          </ul>
+        </div>
+        <div class="contact-content-main">
+          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
+          <p class="contact-person">联系人：陈先生</p>
+          <p class="contact-email">邮箱：bd@lootglobal.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer clearfix flex">
+      <ul>
+        <li>
+          <span>ITAM GAMES Inc. 14,</span><br>
+          <span>Teheran-ro 26-gil,</span><br>
+          <span>Gangnam-gu,Seoul, </span><br>
+          <span>Republic of Korea (Zip Code: 06236)</span>
+        </li>
+        <li><div></div></li>
+        <li>掠宝（https://www.xlot.io）游戏资产交易平台 版权所有 2019-2020</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -179,6 +262,9 @@ export default {
   background-color: #fff;
 }
 .product-center{
+  
+}
+.center-title{
   width: 100%;
   height: 109px;
   background: url('../assets/image/centerBG.png') no-repeat;
@@ -282,5 +368,129 @@ export default {
 }
 .page li:hover{
   background-color: #2d5ce8;
+}
+.page-left,
+.page-right{
+  background-color: #fff!important;
+}
+
+.show-img{
+  margin-bottom: 93px;
+}
+.show-img li{
+  float: left;
+  margin-left:53px;
+}
+.show-img li img{
+  width: 475px;
+  
+}
+.about-content,
+.contact-content{
+  width: 1765px;
+}
+.about-content-title,
+.contact-content-title{
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+.about-content-title li,
+.contact-content-title li{
+  float: left;
+  font-size: 24px;
+  color: #000;
+  font-family: "黑体";
+  width: 160px;
+  padding-bottom: 17px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+.about-content-title li:hover,
+.contact-content-title li:hover{
+  border-bottom: 3px solid #5e7ddb;
+}
+
+.about-content-main{
+  text-align: left;
+  font-size: 20px;
+  color:#898989;
+  margin-top: 60px;
+}
+
+.about-content-main li{
+  margin-bottom:44px
+}
+.contact-us-controduce{
+  height: 190px;
+  margin-bottom: 124px;
+}
+.contact-us-controduce li{
+  float: left;
+  margin-left: 96px;
+}
+.contact-us-controduce li img{
+  width: 725px;
+  margin-top: 30px;
+}
+.contact-us-controduce li div{
+  width: 1px;
+  height: 190px;
+  background-color: #000;
+}
+.contact-us-controduce li p{
+  width: 780px;
+  font-size: 20px;
+  color: #898989;
+  text-align: left;
+  margin-top:25px;
+}
+.contact-content-title{
+  border-bottom: 1px solid #898989 !important;
+}
+
+.contact-content-main{
+  text-align: left;
+}
+
+.contact-first-p{
+  font-size:20px ;
+  font-family: "黑体";
+  color: #898989;
+  margin-bottom: 45px;
+}
+
+.contact-person,
+.contact-email{
+  font-size: 22px;
+  color:#181818;
+  margin-bottom: 16px;
+}
+
+.footer{
+  width: 100%;
+  height: 191px;
+  margin-top: 239px;
+  background: url('../assets/image/footerBG.png') no-repeat;
+}
+
+.footer li{
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+}
+.footer li:first-of-type{
+  margin-top:52px;
+  margin-right: 62px;
+}
+
+.footer li:last-of-type{
+  margin-top: 80px;
+  margin-left: 62px;
+}
+.footer li div{
+  width: 1px;
+  height: 150px;
+  background: #4f4f4f;
 }
 </style>
