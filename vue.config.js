@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:56:13
- * @LastEditTime: 2021-01-21 17:09:58
+ * @LastEditTime: 2021-01-25 11:47:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\vue.config.js
@@ -9,7 +9,7 @@
 
 // 引入等比适配插件
 const px2rem = require('postcss-px2rem')
-
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 const Timestamp = new Date().getTime();
 
@@ -59,6 +59,39 @@ module.exports = {
         remPrecision: 8
       })
       .end()
-  }
-  
+
+      config.module
+      .rule('min-image')
+      .test(/\.(png|jpe?g|gif)(\?.*)?$/)
+      .use('image-webpack-loader')
+      .loader('image-webpack-loader')
+      .options({ disable: process.env.NODE_ENV == 'development' ? true : false })//此处为ture的时候不会启用压缩处理,目的是为了开发模式下调试速度更快,网上错误示例直接写为disable:true,如果不去查看文档肯定是要被坑的
+      .end()
+
+      if (process.env.NODE_ENV === 'production') {
+        // 启动时动态创建一个html：http://localhost:8888/report.html
+        // config.plugin('webpack-bundle-analyzer').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
+        // 生成一个静态html，report.html
+        config.plugin('webpack-report').use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [
+            {
+                analyzerMode: 'static'
+            }
+        ]);
+    }
+  },
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+        config.plugins.push(
+            ...[
+                new CompressionWebpackPlugin({
+                    filename: '[path].gz[query]',
+                    algorithm: 'gzip',
+                    test: /\.(js|css|html|svg)$/i,
+                    threshold: 2048,
+                    minRatio: 0.8
+                })
+            ]
+        );
+    }
+}
 }
