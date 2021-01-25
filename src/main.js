@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-21 14:21:55
+ * @LastEditTime: 2021-01-25 18:45:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\main.js
@@ -16,8 +16,12 @@ import store from './store';
 import './assets/css/common.css'
 import lgComponents from "./components/index"
 import 'lib-flexible'
+
+
+
 Vue.config.productionTip = false;
 Vue.use(lgComponents)
+
 new Vue({
   router,
   store,

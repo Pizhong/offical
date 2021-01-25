@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-25 12:24:39
+ * @LastEditTime: 2021-01-25 18:45:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -9,6 +9,8 @@
 <template>
   <div class="container">
     <lg-Nav></lg-Nav>
+    
+    
     <div class="home-banner">
       <img src="../assets/image/enter.png" class="banner-btn">
       <div class="banner-tab flex">
@@ -77,7 +79,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <!-- <li>
             <div>
               <div class="item-top">
                 <img src="../assets/image/item4.png" class="top-first-img">
@@ -115,7 +117,7 @@
                 <span class="enter-offical">进入官网</span>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="page flex">
@@ -124,7 +126,6 @@
         </div>
         <ul>
           <li>1</li>
-          <li>2</li>
         </ul>
         <div class="page-right flex">&gt;</div>
       </div>
@@ -134,13 +135,13 @@
         <img src="../assets/image/aboutusCN.png" class="img-CN">
         <img src="../assets/image/aboutusEN.png" class="img-EN">
       </div>
-      <div class="show-img flex">
+      <!-- <div class="show-img flex">
         <ul>
           <li><img src="../assets/image/us-img1.png" alt=""></li>
           <li><img src="../assets/image/us-img2.png" alt=""></li>
           <li><img src="../assets/image/us-img3.png" alt=""></li>
         </ul>
-      </div>
+      </div> -->
       <div class="about-content">
         <div class="about-content-title flex">
           <ul>
@@ -209,7 +210,7 @@
           <span>Republic of Korea (Zip Code: 06236)</span>
         </li>
         <li><div></div></li>
-        <li>掠宝（https://www.xlot.io）游戏资产交易平台 版权所有 2019-2020</li>
+        <li>掠宝（粤ICP备18004981号-2）游戏资产交易平台 版权所有 2019-2020</li>
       </ul>
     </div>
   </div>
@@ -217,28 +218,47 @@
 
 <script>
 import LgNav from '../components/Nav.vue';
-// @ is an alias to /src
-
-
+import Swiper from 'swiper'
 export default {
   name: 'Home',
   components: {
-    LgNav
+    LgNav,
     
   },
+  methods: {
+      
+    },
+    mounted(){
+      new Swiper ('.swiper-container', {
+        loop: true,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        // 如果需要滚动条
+        scrollbar: '.swiper-scrollbar',
+        //如果需要自动切换海报
+        autoplay: {
+          delay: 1000,//时间 毫秒
+          disableOnInteraction: false,//用户操作之后是否停止自动轮播默认true
+        },
+      })
+    }
+    
 };
 </script>
 <style lang="css" scoped>
 .home-banner{
   width: 1920px;
   height: 676px;
-  background: url('../assets/image/banner.png') no-repeat;
-  background-size: 1920px 676px;
+  /* background: url('../assets/image/banner.png') no-repeat; */
+  /* background-size: 1920px 676px; */
   position: relative;
 }
 .banner-btn{
   position: absolute;
-  top: 408px;
+  top: 488px;
   left: 356px;
   width: 354px;
 }
@@ -497,4 +517,5 @@ export default {
   height: 150px;
   background: #4f4f4f;
 }
+
 </style>
