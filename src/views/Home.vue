@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-25 10:08:21
+ * @LastEditTime: 2021-01-25 12:24:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -240,6 +240,7 @@ export default {
   position: absolute;
   top: 408px;
   left: 356px;
+  width: 354px;
 }
 
 .banner-tab{
@@ -276,8 +277,11 @@ export default {
 }
 .img-CN{
   margin-bottom: 10px!important;
+  width: 136px;
 }
-
+.img-EN{
+  width: 107px;
+}
 .center-item{
   width: 1520px;
   margin-top: 60px;
