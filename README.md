@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:41:23
- * @LastEditTime: 2021-01-25 11:06:49
+ * @LastEditTime: 2021-01-25 11:56:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\README.md
@@ -38,8 +38,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 
 ```
-2、npm i lib-flexible -S 
+2、下载插件
+   npm i lib-flexible -S 
    npm i postcss-plugin-px2rem 
+   npm i compression-webpack-plugin@5.0.1
+   npm i image-webpack-loader
 ```
 
 ```
