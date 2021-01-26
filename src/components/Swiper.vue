@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 09:46:43
- * @LastEditTime: 2021-01-26 11:03:42
+ * @LastEditTime: 2021-01-26 14:13:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\components\Swiper.vue
@@ -26,7 +26,7 @@
   export default {
     data(){
       return{
-      dataList:[require('../assets/image/banner.png'),require('../assets/image/banner.png'),require('../assets/image/banner.png')],
+      dataList:[require('../assets/image/banner.png')],
       currentIndex: 0,   //默认显示图片
       timer: null    //定时器
       }

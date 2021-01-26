@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-26 12:31:21
+ * @LastEditTime: 2021-01-26 14:16:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -30,7 +30,7 @@
               </div>
               <div class="bottom">
                 <span class="game-download">游戏下载</span>
-                <span class="enter-offical">进入官网</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
               </div>
             </div>
           </li>
@@ -43,7 +43,7 @@
               </div>
               <div class="bottom">
                 <span class="game-download">游戏下载</span>
-                <span class="enter-offical">进入官网</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
               </div>
             </div>
           </li>
@@ -56,7 +56,7 @@
               </div>
               <div class="bottom">
                 <span class="game-download">游戏下载</span>
-                <span class="enter-offical">进入官网</span>
+                <span class="enter-offical" @click="handleEnter()">进入官网</span>
               </div>
             </div>
           </li>
@@ -293,6 +293,9 @@ export default {
             this.isContact[k]=false
           }
         }
+      },
+      handleEnter(){
+        console.log('点击进入官网');
       }
     },
     mounted(){
@@ -398,6 +401,7 @@ export default {
   display: inline-block;
   position: relative;
   margin-right: 46px;
+  cursor: pointer;
 }
 .game-download::before{
   content: '';
@@ -413,6 +417,7 @@ export default {
 .enter-offical{
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .enter-offical::before{
   content: '';
