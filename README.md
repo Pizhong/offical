@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:41:23
- * @LastEditTime: 2021-01-25 11:56:19
+ * @LastEditTime: 2021-01-26 14:34:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\README.md
@@ -60,4 +60,26 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 ```
 5、npm run build 打包项目
+```
+
+
+### 代码目录
+```
+   |-- vue.config.js  进行项目的全局配置
+    |-- dist          打包目录
+    |-- public        
+    |   |-- favicon.ico
+    |   |-- index.html
+    |-- src         
+        |-- App.vue  根组件
+        |-- main.js  入口文件
+        |-- assets   静态资源
+        |   |-- css  放置公共样式
+        |   |-- image 放置图片
+        |-- components  放置功能性组件，并通过index.js全局暴露
+        |-- router  路由
+        |-- store  状态管理
+        |-- util  工具
+        |-- views  放置页面组件
+
 ```

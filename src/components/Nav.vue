@@ -1,9 +1,9 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 11:24:21
- * @LastEditTime: 2021-01-21 14:39:01
+ * @LastEditTime: 2021-01-26 14:35:08
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @Description: 导航组件
  * @FilePath: \offical\src\components\LgNav.vue
 -->
 

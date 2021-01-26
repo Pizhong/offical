@@ -1,9 +1,9 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 09:46:43
- * @LastEditTime: 2021-01-26 14:13:01
+ * @LastEditTime: 2021-01-26 14:35:18
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @Description: 轮播图组件
  * @FilePath: \offical\src\components\Swiper.vue
 -->
 <template>

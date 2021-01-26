@@ -1,9 +1,9 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-26 14:16:25
+ * @LastEditTime: 2021-01-26 14:35:37
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
 -->
 <template>
