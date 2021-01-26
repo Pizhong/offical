@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 09:46:43
- * @LastEditTime: 2021-01-26 14:35:18
+ * @LastEditTime: 2021-01-26 14:54:39
  * @LastEditors: Please set LastEditors
  * @Description: 轮播图组件
  * @FilePath: \offical\src\components\Swiper.vue
@@ -11,7 +11,7 @@
   <div class="item">
     <img :src="dataList[currentIndex]">
   </div>
-  <div class="page flex" v-if="this.dataList.length > 1">
+  <div class="page flex" v-if="this.dataList.length >= 1">
     <ul>
       <!-- <li @click="gotoPage(prevIndex)">&lt;</li> -->
       <li v-for="(item,index) in dataList" :key='index' @click="gotoPage(index)" :class="{'current':currentIndex == index}"><div></div></li>
@@ -100,7 +100,7 @@
         transform: translateX(-50%);
         width: 551px;
         height: 31px;
-        background: url('../assets/image/tabBG.png') no-repeat;
+        /* background: url('../assets/image/tabBG.png') no-repeat; */
     }
     .banner .page ul {
         /* float: right; */
