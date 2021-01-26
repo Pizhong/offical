@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:56:13
- * @LastEditTime: 2021-01-25 11:47:31
+ * @LastEditTime: 2021-01-26 10:08:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\vue.config.js
@@ -78,6 +78,19 @@ module.exports = {
             }
         ]);
     }
+
+    const oneOfsMap = config.module.rule('scss').oneOfs.store
+    oneOfsMap.forEach(item => {
+      item
+        .use('sass-resources-loader')
+        .loader('sass-resources-loader')
+        .options({
+            // Provide path to the file with resources
+            // 要公用的scss的路径
+            resources: './src/assets/css/common.scss'
+        })
+        .end()
+    })
   },
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {

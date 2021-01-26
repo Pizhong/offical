@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-25 18:45:03
+ * @LastEditTime: 2021-01-26 09:34:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\main.js
@@ -17,8 +17,9 @@ import './assets/css/common.css'
 import lgComponents from "./components/index"
 import 'lib-flexible'
 
-
-
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/swiper-bundle.css';
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.config.productionTip = false;
 Vue.use(lgComponents)
 

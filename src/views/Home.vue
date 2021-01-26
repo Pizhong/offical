@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-25 18:45:48
+ * @LastEditTime: 2021-01-26 12:08:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -10,28 +10,9 @@
   <div class="container">
     <lg-Nav></lg-Nav>
     
-    
     <div class="home-banner">
+      <lg-swiper></lg-swiper>
       <img src="../assets/image/enter.png" class="banner-btn">
-      <div class="banner-tab flex">
-        <ul>
-          <li>
-            <div class="tab"></div>
-          </li>
-          <li>
-            <div class="tab"></div>
-          </li>
-          <li>
-            <div class="tab"></div>
-          </li>
-          <li>
-            <div class="tab"></div>
-          </li>
-          <li>
-            <div class="tab"></div>
-          </li>
-        </ul>
-      </div>
     </div>
     <div class="product-center">
       <div class="center-title">
@@ -145,14 +126,10 @@
       <div class="about-content">
         <div class="about-content-title flex">
           <ul>
-            <li>公司概况</li>
-            <li>投资管理</li>
-            <li>公司文化</li>
-            <li>成长历程</li>
-            <li>获奖情况</li>
+            <li v-for="(item,index) in aboutDataList" :key='index' @click="handleAboutThis(index)" :class="{'aboutCurrent':aboutCurrentIndex == index}">{{item}}</li>
           </ul>
         </div>
-        <div class="about-content-main flex">
+        <div class="about-content-main" v-show="isAbout[0]">
           <ul>
             <li>
               <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
@@ -169,10 +146,56 @@
             </li>
           </ul>
         </div>
+        <div class="about-content-main "  v-show="isAbout[1]">
+          <ul>
+            <li>
+              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
+                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
+                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+            </li>
+            <li>
+              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
+                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about-content-main "  v-show="isAbout[2]">
+          <ul>
+            <li>
+              <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
+                润过亿，组织结构完善，是国内知名的网络游戏高新企业。2017年，公司收购XXXX，进一步拓展了新的游戏业务，并在网页游戏和H5游戏的细分市场进行了布局。</p>
+            </li>
+            <li>
+              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
+                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
+                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about-content-main "  v-show="isAbout[3]">
+          <ul>
+            <li>
+              <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
+                润过亿，组织结构完善，是国内知名的网络游戏高新企业。2017年，公司收购XXXX，进一步拓展了新的游戏业务，并在网页游戏和H5游戏的细分市场进行了布局。</p>
+            </li>
+            <li>
+              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
+                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about-content-main "  v-show="isAbout[4]">
+          <ul>
+            <li>
+              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
+                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="contact-us flex">
-      <div class="center-title mgt175 mgb60">
+      <div class="center-title mgb60">
         <img src="../assets/image/contactusCN.png" class="img-CN">
         <img src="../assets/image/contactusEN.png" class="img-EN">
       </div>
@@ -187,17 +210,26 @@
       <div class="contact-content">
         <div class="contact-content-title flex mgb60">
           <ul>
-            <li>海外合作</li>
-            <li>市场合作</li>
-            <li>商务合作</li>
-            <li>应聘咨询</li>
-            <li>客服专线</li>
+            <li v-for="(item,index) in contactDataList" :key='index' @click="handleContactThis(index)" :class="{'aboutCurrent':contactCurrentIndex == index}">{{item}}</li>
           </ul>
         </div>
-        <div class="contact-content-main">
+        <div class="contact-content-main" v-show="isContact[0]">
           <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
           <p class="contact-person">联系人：陈先生</p>
           <p class="contact-email">邮箱：bd@lootglobal.com</p>
+        </div>
+        <div class="contact-content-main"  v-show="isContact[1]">
+          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
+        </div>
+        <div class="contact-content-main" v-show="isContact[2]">
+          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
+          <p class="contact-person">联系人：陈先生</p>
+        </div>
+        <div class="contact-content-main"  v-show="isContact[3]">
+          <p class="contact-email">邮箱：bd@lootglobal.com</p>
+        </div>
+        <div class="contact-content-main"  v-show="isContact[4]">
+          <p class="contact-person">联系人：陈先生</p>        
         </div>
       </div>
     </div>
@@ -218,35 +250,56 @@
 
 <script>
 import LgNav from '../components/Nav.vue';
-import Swiper from 'swiper'
+import LgSwiper from '../components/Swiper'
+
 export default {
   name: 'Home',
   components: {
     LgNav,
-    
+    LgSwiper
+  },
+  data(){
+    return{
+      //关于我们
+      isAbout:[true,false,false,false,false],
+      aboutDataList:['公司概况','投资管理','公司文化','成长历程','获奖情况'],
+      aboutCurrentIndex:0,
+      //联系我们
+      isContact:[true,false,false,false,false],
+      contactDataList:['海外合作','市场合作','商务合作','应聘咨询','客服专线'],
+      contactCurrentIndex:0
+    }
   },
   methods: {
-      
+      handleAboutThis(index){
+        console.log(index,'index');
+        this.aboutCurrentIndex=index
+        for(let k in this.isAbout){
+          if(index==k){
+            this.isAbout[k]=true
+          }
+          else{
+            this.isAbout[k]=false
+          }
+        }
+      },
+      handleContactThis(index){
+        this.contactCurrentIndex=index
+        for(let k in this.isContact){
+          if(index==k){
+            this.isContact[k]=true
+          }
+          else{
+            this.isContact[k]=false
+          }
+        }
+      }
     },
     mounted(){
-      new Swiper ('.swiper-container', {
-        loop: true,
-        // 如果需要分页器
-        pagination: '.swiper-pagination',
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        // 如果需要滚动条
-        scrollbar: '.swiper-scrollbar',
-        //如果需要自动切换海报
-        autoplay: {
-          delay: 1000,//时间 毫秒
-          disableOnInteraction: false,//用户操作之后是否停止自动轮播默认true
-        },
-      })
-    }
+      
     
-};
+}
+}
 </script>
 <style lang="css" scoped>
 .home-banner{
@@ -258,7 +311,7 @@ export default {
 }
 .banner-btn{
   position: absolute;
-  top: 488px;
+  top: 408px;
   left: 356px;
   width: 354px;
 }
@@ -393,6 +446,7 @@ export default {
 .page li:hover{
   background-color: #2d5ce8;
 }
+
 .page-left,
 .page-right{
   background-color: #fff!important;
@@ -433,8 +487,11 @@ export default {
 .contact-content-title li:hover{
   border-bottom: 3px solid #5e7ddb;
 }
-
+.aboutCurrent{
+  border-bottom: 3px solid #5e7ddb !important;
+}
 .about-content-main{
+  height: 479px;
   text-align: left;
   font-size: 20px;
   color:#898989;
@@ -473,6 +530,7 @@ export default {
 }
 
 .contact-content-main{
+  height: 390px;
   text-align: left;
 }
 
@@ -493,7 +551,7 @@ export default {
 .footer{
   width: 100%;
   height: 191px;
-  margin-top: 239px;
+
   background: url('../assets/image/footerBG.png') no-repeat;
 }
 
