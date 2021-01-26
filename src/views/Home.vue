@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-26 12:08:14
+ * @LastEditTime: 2021-01-26 12:31:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\src\views\Home.vue
@@ -12,7 +12,7 @@
     
     <div class="home-banner">
       <lg-swiper></lg-swiper>
-      <img src="../assets/image/enter.png" class="banner-btn">
+      <!-- <img src="../assets/image/enter.png" class="banner-btn"> -->
     </div>
     <div class="product-center">
       <div class="center-title">
