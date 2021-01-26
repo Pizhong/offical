@@ -1,19 +1,21 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-26 14:35:37
+ * @LastEditTime: 2021-01-26 15:17:05
  * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
 -->
 <template>
   <div class="container">
+    <!-- 导航栏 -->
     <lg-Nav></lg-Nav>
-    
+    <!-- banner部分 -->
     <div class="home-banner">
       <lg-swiper></lg-swiper>
       <!-- <img src="../assets/image/enter.png" class="banner-btn"> -->
     </div>
+    <!-- 项目中心 -->
     <div class="product-center">
       <div class="center-title">
         <img src="../assets/image/centerTextCN.png" class="img-CN">
@@ -111,6 +113,7 @@
         <div class="page-right flex">&gt;</div>
       </div>
     </div>
+    <!-- 关于我们 -->
     <div class="about-us flex">
       <div class="center-title mgt82 mgb60">
         <img src="../assets/image/aboutusCN.png" class="img-CN">
@@ -194,6 +197,7 @@
         </div>
       </div>
     </div>
+    <!-- 联系我们 -->
     <div class="contact-us flex">
       <div class="center-title mgb60">
         <img src="../assets/image/contactusCN.png" class="img-CN">
@@ -233,6 +237,7 @@
         </div>
       </div>
     </div>
+    <!-- 页脚 -->
     <div class="footer clearfix flex">
       <ul>
         <li>
