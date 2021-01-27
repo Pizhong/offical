@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 10:56:13
- * @LastEditTime: 2021-01-26 10:08:12
+ * @LastEditTime: 2021-01-27 19:25:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \offical\vue.config.js
@@ -39,7 +39,7 @@ module.exports = {
       postcss: {
         plugins: [
           require('postcss-plugin-px2rem')({
-            rootValue: 192, // 换算基数,默认为100
+            rootValue: 133.6, // 换算基数,默认为100
             exclude: /(node_module)/, // 默认false, 可以用正则表达式排除某些文件的转换
             mediaQuery: false, // 允许在媒体查询中转换px
           })
@@ -55,7 +55,7 @@ module.exports = {
       .use('px2rem-loader')
       .loader('px2rem-loader')
       .options({
-        remUnit: 192,
+        remUnit: 133.6,
         remPrecision: 8
       })
       .end()

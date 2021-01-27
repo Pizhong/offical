@@ -8,8 +8,8 @@ fieldset, img { border: 0; }
 ul, ol, li { list-style: none; font-family:'黑体'; }
 
 .container{
-  width: 1920px;
-  height: 3511px;
+  width: 1136px;
+  height: 1511px;
   margin: auto;
   background-color: #f6f7fb;
 
@@ -41,12 +41,15 @@ ul, ol, li { list-style: none; font-family:'黑体'; }
   margin-right: 0!important;
 }
 
-.mgt82{
-  margin-top: 82px;
+.mgt45{
+  margin-top: 45px;
 }
 .mgt175{
   margin-top: 175px;
 }
-.mgb60{
-  margin-bottom: 60px;
+.mgb28{
+  margin-bottom: 28px;
+}
+.mgb36{
+  margin-bottom: 36px;
 }

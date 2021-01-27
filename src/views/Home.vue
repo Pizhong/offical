@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-26 15:17:05
+ * @LastEditTime: 2021-01-27 19:37:02
  * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
@@ -115,7 +115,7 @@
     </div>
     <!-- 关于我们 -->
     <div class="about-us flex">
-      <div class="center-title mgt82 mgb60">
+      <div class="center-title mgt45 mgb28">
         <img src="../assets/image/aboutusCN.png" class="img-CN">
         <img src="../assets/image/aboutusEN.png" class="img-EN">
       </div>
@@ -135,47 +135,40 @@
         <div class="about-content-main" v-show="isAbout[0]">
           <ul>
             <li>
-              <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
-                润过亿，组织结构完善，是国内知名的网络游戏高新企业。2017年，公司收购XXXX，进一步拓展了新的游戏业务，并在网页游戏和H5游戏的细分市场进行了布局。</p>
+              <p>掠宝网络，全称广东掠宝网络科技有限公司，成立于2018年，是一家专注于区块链技术研究及区块链游戏应用落地的研发型企业。</p>
             </li>
             <li>
-              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
-                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
-                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+              <p>掠宝网络具备丰富的区块链游戏开发经验，不断探索区块链技术与传统网络游戏的结合，致力于用区块链技术为游戏赋能，在降低区块链普通玩家进入门槛上取得了显著成效。</p>
             </li>
             <li>
-              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
-                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+              <p>旗下怪兽派（XPET）游戏工作室先后推出的《怪兽世界》《宠斗牌》《三国争霸》《梦幻怪兽》等区块链游戏，获得大量区块链游戏玩家的高度认可，积累了丰富的游戏社区运营经验，为今后研运一体打下了坚实的基础。</p>
             </li>
           </ul>
         </div>
         <div class="about-content-main "  v-show="isAbout[1]">
           <ul>
             <li>
-              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
-                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
-                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+              <p>2018年：掠宝网络（LOOTGAME）成立。</p>
             </li>
             <li>
-              <p>为快乐而生，坚持＂精品研发”作为核心竞争力，崇尚拼搏的团队价值观，充分给予人才施展华的机会，更为员工创造平等、分享、快乐的工作平台。XXXX期待更多热爱游戏事业的新老朋
-                友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
+              <p>2019年：掠宝自主研发的首款RPG养成类区块链游戏《怪兽世界》正式上线，是国内区块链游戏的代表作，同年发行的支线卡牌游戏《宠斗牌》，开创了区块链游戏资产跨游复用的先河，在区块链游戏领域获得多方赞誉。</p>
             </li>
+            <li>
+              <p>2020年：掠宝自主研发的基于三国IP的SLG策略游戏《三国争霸》和基于西游IP的2D回合制游戏《梦幻怪兽》正式上线，是国内首款2D回合制区块链游戏，获得高度关注。</p>
+              </li>
           </ul>
         </div>
         <div class="about-content-main "  v-show="isAbout[2]">
           <ul>
             <li>
-              <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
-                润过亿，组织结构完善，是国内知名的网络游戏高新企业。2017年，公司收购XXXX，进一步拓展了新的游戏业务，并在网页游戏和H5游戏的细分市场进行了布局。</p>
+              <p>2019Dapp最具创新奖   权威区块链财经媒体金色财经颁发</p>
             </li>
             <li>
-              <p>XXXX具有完全自主知识产权的游戏引擎和游戏开发平台，研发实力一流，旗下拥有经验丰富的市场发行团队和运营支撑体系，运营基础雄厚。现时，淘乐网络拥有多个产品工作室，在端游
-                手游领域拥有多款主流经典作品，如端游《XX》、《XX、《XXXX》、手游《XXX》等。旗下子公司 XXXXXXXXX＞代表作有《XXXX、《XXX》等。淘乐网络旗下
-                品凭借优秀的产品品质，服务质量获得多项行业内优秀奖项及玩家认可，累计游戏用户数过亿。</p>
+              <p>2019最佳区块链游戏   权威区块链游戏媒体游戏茶馆颁发</p>
             </li>
           </ul>
         </div>
-        <div class="about-content-main "  v-show="isAbout[3]">
+        <!-- <div class="about-content-main "  v-show="isAbout[3]">
           <ul>
             <li>
               <p>XXXXXXXX，全称 XXXXXXXXXXX科技有限公司，成立于2009年，本着“为快乐而生”的企业理念，致力于网络游戏研发及运营，为用户带来更多的快乐游戏体验!公司现有员工500余名，年利
@@ -194,7 +187,7 @@
                 友加入，让更多人享受真实的虚拟世界互动娱乐带来的美好。</p>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- 联系我们 -->
@@ -207,34 +200,36 @@
         <ul>
           <li><img src="../assets/image/logo2.png" ></li>
           <li><div></div></li>
-          <li><p>网络网络成立至今，已经成为中国坚持自主研发民族原创网游的新兴品牌。并且成为华南地区少数拥有，研发、运营、发行一体化能力以及拥有端游、页游、手游多平台多维度多产品的研发型
-            网络游戏公司。淘乐网络与国内数百家媒体保持长期合作关系，产品出口东南亚、南亚数十个国家和地区，未来将在全领域与世界一流游戏公司合作，立志成为国内线游戏厂商。＂真诚互信，包容开放”x欢迎与您合作。</p></li>
+          <li><p>掠宝网络成立至今，已经成为国内探索区块链技术与游戏应用结合的第一创新品牌，并且通过对游戏社区化运营的探索，成为为数不多研运一体和集区块链底层技术研究与游戏应用开发的两栖团队，立志成为国内区块链游戏的领先企业。未来，我们将逐步拓展海外市场，借助区块链全球化运营的优势，与国际一流区块链企业及游戏公司合作，高度开放的掠宝网络期待与您的合作。</p></li>
         </ul>
       </div>
       <div class="contact-content">
-        <div class="contact-content-title flex mgb60">
+        <div class="contact-content-title flex mgb36">
           <ul>
             <li v-for="(item,index) in contactDataList" :key='index' @click="handleContactThis(index)" :class="{'aboutCurrent':contactCurrentIndex == index}">{{item}}</li>
           </ul>
         </div>
         <div class="contact-content-main" v-show="isContact[0]">
-          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
-          <p class="contact-person">联系人：陈先生</p>
-          <p class="contact-email">邮箱：bd@lootglobal.com</p>
+          <p class="contact-first-p">掠宝希望通过与各大游戏媒体网站、平台、渠道，游戏KOL建立长期稳定的合作伙伴关系，互利双方共建品牌。</p>
+          <p class="contact-person">联系人：王先生</p>
+          <p class="contact-email">邮箱：61587283@qq.com</p>
         </div>
         <div class="contact-content-main"  v-show="isContact[1]">
-          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
+          <p class="contact-first-p">掠宝欢迎各类机构及个人合作，共建异业联盟，促进双方共同发展</p>
+          <p class="contact-person">联系人：王先生</p>
+          <p class="contact-email">邮箱：61587283@qq.com</p>
         </div>
         <div class="contact-content-main" v-show="isContact[2]">
-          <p class="contact-first-p">XXXXXXXXXX热诚欢迎全球各地的厂商与我们接洽各类合作事宜，携手打造完美的商业模式</p>
-          <p class="contact-person">联系人：陈先生</p>
+          <p class="contact-first-p">掠宝欢迎致力于区块链及游戏领域的有识之士前来咨询，共谋发展</p>
+          <p class="contact-person">联系人：苏小姐</p>
+          <p class="contact-email">邮箱：46894795@qq.com</p>
+
         </div>
         <div class="contact-content-main"  v-show="isContact[3]">
-          <p class="contact-email">邮箱：bd@lootglobal.com</p>
+          <p class="contact-first-p">您对产品和项目内容有任何问题，请您第一时间与我们的客服联系。</p>
+          <p class="contact-person">客服微信：LootGlobal</p>
         </div>
-        <div class="contact-content-main"  v-show="isContact[4]">
-          <p class="contact-person">联系人：陈先生</p>        
-        </div>
+        
       </div>
     </div>
     <!-- 页脚 -->
@@ -267,11 +262,11 @@ export default {
     return{
       //关于我们
       isAbout:[true,false,false,false,false],
-      aboutDataList:['公司概况','投资管理','公司文化','成长历程','获奖情况'],
+      aboutDataList:['公司概况','成长历程','获奖情况'],
       aboutCurrentIndex:0,
       //联系我们
       isContact:[true,false,false,false,false],
-      contactDataList:['海外合作','市场合作','商务合作','应聘咨询','客服专线'],
+      contactDataList:['市场合作','商务合作','应聘咨询','客服专线'],
       contactCurrentIndex:0
     }
   },
@@ -311,8 +306,8 @@ export default {
 </script>
 <style lang="css" scoped>
 .home-banner{
-  width: 1920px;
-  height: 676px;
+  width: 1136px;
+  height: 400px;
   /* background: url('../assets/image/banner.png') no-repeat; */
   /* background-size: 1920px 676px; */
   position: relative;
@@ -348,9 +343,9 @@ export default {
 }
 .center-title{
   width: 100%;
-  height: 109px;
+  height: 62px;
   background: url('../assets/image/centerBG.png') no-repeat;
-  padding-top: 25px;
+  padding-top: 11px;
 }
 .center-title img{
   display: block;
@@ -358,21 +353,21 @@ export default {
 }
 .img-CN{
   margin-bottom: 10px!important;
-  width: 136px;
+  width: 83px;
 }
 .img-EN{
-  width: 107px;
+  width: 60px;
 }
 .center-item{
   width: 1520px;
-  margin-top: 60px;
-  margin-left: 199px;
+  margin-top: 36px;
+  margin-left: 120px;
 }
 .center-item li {
   float: left;
-  width: 470px;
-  margin-right: 54px;
-  margin-bottom: 54px ;
+  width: 280px;
+  margin-right: 25px;
+  margin-bottom: 25px ;
   background-color: #fff;
 }
 .item-top{
@@ -380,44 +375,44 @@ export default {
   background-color: #fff;
 }
 .top-first-img{
-  width: 470px;
-  height: 283px;
-  margin-bottom: 20px;
+  width: 280px;
+  height: 166px;
+  margin-bottom: 12px;
 }
 .top-second-img{
-  width: 10px;
-  height: 36px;
+  width: 7px;
+  height: 25px;
   float: left;
-  margin-left: 25px;
+  margin-left: 12px;
 }
 .item-title{
   color: #000;
-  font-size: 24px;
+  font-size: 14.2px;
   font-weight: bolder;
   font-family: "黑体";
   float: left;
 }
 .bottom{
-  margin: 77px 0 20px 229px;
-  font-size: 18px;
+  margin: 47px 0 14px 135px;
+  font-size: 10.65px;
   color: #898989;
 }
 .game-download{
   display: inline-block;
   position: relative;
-  margin-right: 46px;
+  margin-right: 31px;
   cursor: pointer;
 }
 .game-download::before{
   content: '';
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   background: url('../assets/image/icon-download.png') no-repeat;
-  background-size: 22px 22px;
+  background-size: 15px 15px;
   position: absolute;
   top: 0;
-  left: -25px;
+  left: -20px;
 }
 .enter-offical{
   display: inline-block;
@@ -427,26 +422,26 @@ export default {
 .enter-offical::before{
   content: '';
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   background: url('../assets/image/icon-comming.png') no-repeat;
-  background-size: 22px 22px;
+  background-size: 15px 15px;
   position: absolute;
   top: 0;
-  left: -25px;
+  left: -20px;
 }
 
 .page-left,.page-right,.page li{
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
   border: 1px solid #5c7aa9;
   color: #5c7aa9;
-  font-size: 36px;
+  font-size: 14.2px;
   font-weight: bold;
   float: left;
   cursor: pointer;
-  margin-right: 13px;
+  margin-right: 10px;
 }
 .page li{
   color: #fff!important;
@@ -475,7 +470,7 @@ export default {
 }
 .about-content,
 .contact-content{
-  width: 1765px;
+  width: 1045px;
 }
 .about-content-title,
 .contact-content-title{
@@ -485,13 +480,13 @@ export default {
 .about-content-title li,
 .contact-content-title li{
   float: left;
-  font-size: 24px;
+  font-size: 14.2px;
   color: #000;
   font-family: "黑体";
-  width: 160px;
-  padding-bottom: 17px;
+  width: 96px;
+  padding-bottom: 12px;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .about-content-title li:hover,
 .contact-content-title li:hover{
@@ -501,88 +496,88 @@ export default {
   border-bottom: 3px solid #5e7ddb !important;
 }
 .about-content-main{
-  height: 479px;
+  height: 153px;
   text-align: left;
-  font-size: 20px;
+  font-size: 11.83px;
   color:#898989;
-  margin-top: 60px;
+  margin-top: 29px;
 }
 
 .about-content-main li{
-  margin-bottom:44px
+  margin-bottom:23px
 }
 .contact-us-controduce{
-  height: 190px;
-  margin-bottom: 124px;
+  height: 170px;
+  margin-bottom: 41px;
 }
 .contact-us-controduce li{
   float: left;
-  margin-left: 96px;
+  margin-left: 46px;
 }
 .contact-us-controduce li img{
-  width: 725px;
-  margin-top: 30px;
+  width: 422px;
+  margin-top: 20px;
 }
 .contact-us-controduce li div{
   width: 1px;
-  height: 190px;
+  height: 109px;
   background-color: #000;
 }
 .contact-us-controduce li p{
-  width: 780px;
-  font-size: 20px;
+  width: 483px;
+  font-size: 11.83px;
   color: #898989;
   text-align: left;
-  margin-top:25px;
+  margin-top:15px;
 }
 .contact-content-title{
   border-bottom: 1px solid #898989 !important;
 }
 
 .contact-content-main{
-  height: 390px;
+  height: 227px;
   text-align: left;
 }
 
 .contact-first-p{
-  font-size:20px ;
+  font-size:11.83px ;
   font-family: "黑体";
   color: #898989;
-  margin-bottom: 45px;
+  margin-bottom: 21px;
 }
 
 .contact-person,
 .contact-email{
-  font-size: 22px;
+  font-size: 13.02px;
   color:#181818;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .footer{
   width: 100%;
-  height: 191px;
+  height: 113px;
 
   background: url('../assets/image/footerBG.png') no-repeat;
 }
 
 .footer li{
   float: left;
-  font-size: 16px;
+  font-size: 9.74px;
   color: #fff;
   text-align: left;
 }
 .footer li:first-of-type{
-  margin-top:52px;
-  margin-right: 62px;
+  margin-top:20px;
+  margin-right: 36px;
 }
 
 .footer li:last-of-type{
-  margin-top: 80px;
-  margin-left: 62px;
+  margin-top: 38px;
+  margin-left: 32px;
 }
 .footer li div{
   width: 1px;
-  height: 150px;
+  height: 82px;
   background: #4f4f4f;
 }
 
