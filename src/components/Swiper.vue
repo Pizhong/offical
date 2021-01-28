@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 09:46:43
- * @LastEditTime: 2021-01-28 09:55:02
+ * @LastEditTime: 2021-01-28 10:22:17
  * @LastEditors: Please set LastEditors
  * @Description: 轮播图组件
  * @FilePath: \offical\src\components\Swiper.vue
@@ -97,7 +97,7 @@
     .banner .page {
         
         position: absolute;
-        top: 365px;
+        top: 415px;
         left: 50%;
         transform: translateX(-50%);
         width: 551px;
