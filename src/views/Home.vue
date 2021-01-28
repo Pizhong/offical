@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-28 11:11:25
+ * @LastEditTime: 2021-01-28 11:29:49
  * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
@@ -339,7 +339,7 @@ export default {
   background-color: #fff;
 }
 .product-center{
-  margin-top: 58px;
+  margin-top: 125px;
 }
 .center-title{
   width: 100%;
