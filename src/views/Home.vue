@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-28 11:29:49
+ * @LastEditTime: 2021-01-28 18:01:59
  * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
 -->
 <template>
-  <div class="container">
+  <div class="container" id="hover0">
     <!-- 导航栏 -->
     <lg-Nav></lg-Nav>
     <!-- banner部分 -->
@@ -16,8 +16,9 @@
       <!-- <img src="../assets/image/enter.png" class="banner-btn"> -->
     </div>
     <!-- 项目中心 -->
-    <div class="product-center">
-      <div class="center-title">
+    <div class="product-center" style="position:relative;">
+      <div class="box" id="hover1"></div>
+      <div class="center-title"  ref="hover1">
         <img src="../assets/image/centerTextCN.png" class="img-CN">
         <img src="../assets/image/centerTextEN.png" class="img-EN">
       </div>
@@ -114,7 +115,8 @@
       </div>
     </div>
     <!-- 关于我们 -->
-    <div class="about-us flex">
+    <div class="about-us flex" style="position:relative;">
+      <div class="box1" id="hover2"></div>
       <div class="center-title mgt45 mgb28">
         <img src="../assets/image/aboutusCN.png" class="img-CN">
         <img src="../assets/image/aboutusEN.png" class="img-EN">
@@ -191,8 +193,9 @@
       </div>
     </div>
     <!-- 联系我们 -->
-    <div class="contact-us flex">
-      <div class="center-title mgb60">
+    <div class="contact-us flex" style="position:relative;" >
+      <!-- <div class="box" id="hover3"></div> -->
+      <div class="center-title mgb60" id="hover3">
         <img src="../assets/image/contactusCN.png" class="img-CN">
         <img src="../assets/image/contactusEN.png" class="img-EN">
       </div>
@@ -267,7 +270,8 @@ export default {
       //联系我们
       isContact:[true,false,false,false,false],
       contactDataList:['市场合作','商务合作','应聘咨询','客服专线'],
-      contactCurrentIndex:0
+      contactCurrentIndex:0,
+      toIndex:'',
     }
   },
   methods: {
@@ -296,7 +300,8 @@ export default {
       },
       handleEnter(){
         console.log('点击进入官网');
-      }
+      },
+    
     },
     mounted(){
       
@@ -339,7 +344,7 @@ export default {
   background-color: #fff;
 }
 .product-center{
-  margin-top: 125px;
+  margin-top: 327px;
 }
 .center-title{
   width: 100%;
@@ -581,4 +586,20 @@ export default {
   background: #4f4f4f;
 }
 
+.box{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  
+}
+
+.box1{
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
 </style>
