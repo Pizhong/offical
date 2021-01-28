@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 11:24:21
- * @LastEditTime: 2021-01-28 09:40:39
+ * @LastEditTime: 2021-01-28 10:05:25
  * @LastEditors: Please set LastEditors
  * @Description: 导航组件
  * @FilePath: \offical\src\components\LgNav.vue
@@ -34,6 +34,7 @@
   width: 100%;
   height: 48px;
   background: url('../assets/image/navBG.png') no-repeat;
+  background-size: 100%;
   position: fixed;
   z-index: 999;
 }
