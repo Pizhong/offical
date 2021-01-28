@@ -8,11 +8,10 @@ fieldset, img { border: 0; }
 ul, ol, li { list-style: none; font-family:'黑体'; }
 
 .container{
-  width: 1136px;
-  height: 1511px;
+  width: 100%;
+  height: 1911px;
   margin: auto;
   background-color: #f6f7fb;
-
   
 }
 

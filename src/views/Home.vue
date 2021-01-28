@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 10:40:03
- * @LastEditTime: 2021-01-27 19:37:02
+ * @LastEditTime: 2021-01-28 09:57:11
  * @LastEditors: Please set LastEditors
  * @Description: 首页
  * @FilePath: \offical\src\views\Home.vue
@@ -11,7 +11,7 @@
     <!-- 导航栏 -->
     <lg-Nav></lg-Nav>
     <!-- banner部分 -->
-    <div class="home-banner">
+    <div class="home-banner flex">
       <lg-swiper></lg-swiper>
       <!-- <img src="../assets/image/enter.png" class="banner-btn"> -->
     </div>
@@ -21,7 +21,7 @@
         <img src="../assets/image/centerTextCN.png" class="img-CN">
         <img src="../assets/image/centerTextEN.png" class="img-EN">
       </div>
-      <div class="center-item clearfix">
+      <div class="center-item clearfix flex">
         <ul>
           <li>
             <div>
@@ -306,7 +306,7 @@ export default {
 </script>
 <style lang="css" scoped>
 .home-banner{
-  width: 1136px;
+  
   height: 400px;
   /* background: url('../assets/image/banner.png') no-repeat; */
   /* background-size: 1920px 676px; */
@@ -339,7 +339,7 @@ export default {
   background-color: #fff;
 }
 .product-center{
-  
+  margin-top: 48.5px;
 }
 .center-title{
   width: 100%;
@@ -359,9 +359,9 @@ export default {
   width: 60px;
 }
 .center-item{
-  width: 1520px;
+  
   margin-top: 36px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 .center-item li {
   float: left;
@@ -484,7 +484,7 @@ export default {
   color: #000;
   font-family: "黑体";
   width: 96px;
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }

@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-26 09:46:43
- * @LastEditTime: 2021-01-27 19:47:54
+ * @LastEditTime: 2021-01-28 09:55:02
  * @LastEditors: Please set LastEditors
  * @Description: 轮播图组件
  * @FilePath: \offical\src\components\Swiper.vue
 -->
 <template>
   <div class="banner">
-  <div class="item">
+  <div class="item flex">
     <img :src="dataList[currentIndex]">
   </div>
   <div class="page flex" v-if="this.dataList.length >= 1">
@@ -82,14 +82,16 @@
         margin-left: 5px;
     }
     .banner {
-        width: 1136px;
+        width: 100%;
         height: 400px;
         margin: 0 auto;
         position: relative;
-        
+    }
+    .item{
+      margin-top: 47px;
     }
     .banner img {
-        width: 100%;
+        width: 1136px;
         display: block;
     }
     .banner .page {

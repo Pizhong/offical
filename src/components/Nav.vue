@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-21 11:24:21
- * @LastEditTime: 2021-01-27 19:33:40
+ * @LastEditTime: 2021-01-28 09:40:39
  * @LastEditors: Please set LastEditors
  * @Description: 导航组件
  * @FilePath: \offical\src\components\LgNav.vue
@@ -31,14 +31,17 @@
 
 <style lang="css" scoped>
 .nav-container{
-  width: 1136px;
+  width: 100%;
   height: 48px;
   background: url('../assets/image/navBG.png') no-repeat;
+  position: fixed;
+  z-index: 999;
 }
 .nav-logo{
   width: 536px;
   height: 48px;
   float: left;
+  
 }
 .nav-logo img{
   width: 536px;
